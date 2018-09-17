@@ -51,7 +51,7 @@ cat ./data_uniq | sed 's/^\s*//' | sed 's/ /\t/g;s/ /,/' > data_uniq.csv
 | 32    | YandexBot            | NHT-search |                                                                                     | 
 | 17    | SemrushBot           | NHT-other  |                                                                                     | 
 | 11    | Googlebot-Image      | NHT-search |                                                                                     | 
-| 10    | Gluten Free Crawler  | NHT-other  | Joke: searches for websites containing nog names of food products containing gluten | 
+| 10    | Gluten Free Crawler  | NHT-other  | Joke: searches for websites containing names of food products containing gluten | 
 | 4     | coccoc               | NHT-other  | Vietnamese browser                                                                  | 
 | 3     | Twitterbot           | NHT-other  |                                                                                     | 
 | 3     | Facebot              | NHT-other  |                                                                                     | 
