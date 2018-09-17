@@ -1,0 +1,24 @@
+## Get a list of robot user agents from
+[https://raw.githubusercontent.com/monperrus/crawler-user-agents/master/crawler-user-agents.json]
+
+## filter the json on user agent key
+```
+jq -c 'map(with_entries(select(.key == ("pattern"))))'
+```
+==> robot_patterns.json
+
+## get  the user agent from each line
+`grep ^(?!"pattern").*$`
+==> robot_patterns.txt
+
+## filter to leave only bot names present in data (fish)
+for lina in (cat ../robot_patterns.txt); grep -oh $lina data_split_aa; end
+
+
+NHT-Search
+Googlebot
+
+NHT-other
+facebookexternalhit
+LinkedInbot
+AdsBot
